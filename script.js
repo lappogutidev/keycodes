@@ -1,15 +1,14 @@
 window.onload = function() {
     var keycodeParagraph = document.getElementById("keycodeParagraph");
-    console.log("test : ", keycodeParagraph.innerHTML);
+    var keycodeDescription = document.getElementById("keycodeDescription");
 }
 
 document.addEventListener("keydown", function(event) {
-  keycodeParagraph.innerHTML = event.which;
-  console.log(event.which);
-  console.log(typeof event.which === "number");
+  keycodeUpdate(event);
+  console.log(event.which)
 });
 
-var keycodeUpdate = function(keycode) {
+var keycodeUpdate = function() {
     keycodeParagraph.innerHTML = event.which;
-    
+    keycodeDescription.innerHTML = event.which;
 }
