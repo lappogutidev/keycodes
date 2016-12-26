@@ -6,7 +6,6 @@ window.onload = function() {
 
 document.addEventListener("keydown", function(event) {
   keycodeUpdate(event);
-  console.log("Output = [", event.which, ":", event.key, "]");
 });
 
 var keycodeUpdate = function() {
@@ -14,5 +13,8 @@ var keycodeUpdate = function() {
     keycodeDescription.innerHTML = event.key;
     var logRow = keycodeLog.insertRow(keycodeLog.rows.length-1);
     var logCell = logRow.insertCell(0);
-    logCell.innerHTML = "code : "+event.which+"key : "+event.key;
+    logCell.innerHTML = event.which+" : "+event.key;
+    if (keycodeLog.rows.length > 20) {
+        keycodeLog.deleteRow(0);
+    }
 }
