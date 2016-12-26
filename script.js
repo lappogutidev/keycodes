@@ -15,8 +15,10 @@ var keycodeUpdate = function() {
         keycodeDescription.innerHTML = "<br />";
     };
     var logRow = keycodeLog.insertRow(keycodeLog.rows.length);
-    var logCell = logRow.insertCell(0);
-    logCell.innerHTML = event.which+" : "+event.key;
+    var logCell1 = logRow.insertCell(0);
+    var logCell2 = logRow.insertCell(1);
+    logCell1.innerHTML = event.which;
+    logCell2.innerHTML = event.key;
     if (keycodeLog.rows.length > 20) {
         keycodeLog.deleteRow(0);
     };
