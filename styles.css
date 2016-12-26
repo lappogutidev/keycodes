@@ -1,0 +1,24 @@
+body {
+    background-color: #fff;
+    margin: 0;
+}
+
+#keycodeParagraph {
+    /*background-color: #ff0000;*/
+    margin: 0;
+    text-align: center;
+    font-size: 50px;
+}
+
+#keycodeDescription {
+    /*background-color: #00ff00;*/
+    margin: 0;
+    text-align: center;
+    font-size: 30px;
+}
+
+#keycodeLog {
+    /*background-color: #0000ff;*/
+    margin: auto;
+    width: 100px;
+}

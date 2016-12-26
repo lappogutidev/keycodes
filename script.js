@@ -1,5 +1,7 @@
+var keycodeParagraph;
+
 window.onload = function() {
-    var keycodeParagraph = document.getElementById("keycodeParagraph");
+    keycodeParagraph = document.getElementById("keycodeParagraph");
     var keycodeDescription = document.getElementById("keycodeDescription");
     var keycodeLog = document.getElementById("keycodeLog");
 }
